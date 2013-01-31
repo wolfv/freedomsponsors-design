@@ -37,8 +37,44 @@ tbody tr:first-child td {
 
 #front-big-input {
   width: 100%;
+  height: 50px;
   padding: 10px 5px;
   font-size: 25px;
   line-height: 30px;
   border: 3px solid #030;
+  box-sizing: border-box;
+}
+
+.comment-row {
+  margin-bottom: 10px;
+}
+
+.comment {
+  position: relative;
+  padding: 3px;
+  border: 3px solid #E3E3E3;
+  box-sizing: border-box;
+}
+
+.comment::before {
+  position: absolute;
+  top: 10px;
+  left: -13px;
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-right: 10px solid #E3E3E3;
+  border-bottom: 10px solid transparent;
+  content: '';
+}
+
+.comment .comment-name {
+  padding: 2px 5px;
+  font-weight: bold;
+  background: #CCC;
+}
+
+.comment p {
+  padding: 0 3px;
+  margin-top: 10px;
 }
